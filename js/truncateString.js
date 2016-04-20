@@ -1,18 +1,20 @@
 function truncateString(str, num) {
 
-  // insert if clause
 
   if (num <= 3) {
-     result = str.slice(0, num );
+     result = str.slice(0, num);
      result += "...";
   } else {
+  	if (num >= str.length) {
+  		result = str
+  	} else {
      result = str.slice(0, num - 3);
+     result += "...";
+ 	}
   }
 
-
-  console.log(result);
   return result;
 
 }
 
-truncateString("A-", 1);
+truncateString("Absolutely Longer", 2);
