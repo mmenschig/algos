@@ -1,4 +1,14 @@
+/**
+ * [chunkArrayInGroups description]
+ *
+ * @author  mmenschig
+ * @version  [0.1]
+ * @param  {[array]} arr
+ * @param  {[integer]} size
+ * @return {[Array]}
+ */
 function chunkArrayInGroups(arr, size) {
+
 
   var chunks = [];
   var i = 0;
