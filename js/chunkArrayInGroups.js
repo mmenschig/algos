@@ -1,11 +1,10 @@
 /**
- * [chunkArrayInGroups description]
- *
- * @author  mmenschig
- * @version  [0.1]
- * @param  {[array]} arr
- * @param  {[integer]} size
- * @return {[Array]}
+ * Splits an array into chunks of equal size
+ * @param  {array} arr  	input array to be split
+ * @param  {integer} size 	size of each sub array
+ * @return {array}      	returns nested array
+ * @author mmenschig
+ * @version 1.0
  */
 function chunkArrayInGroups(arr, size) {
 

@@ -1,3 +1,8 @@
+/**
+ * Returns length of longest word in string
+ * @param  {string} str 	input string
+ * @return {integer}    	length of longest word
+ */
 function findLongestWord(str) {
 
   var str_array = str.split(" ");

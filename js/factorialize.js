@@ -1,3 +1,10 @@
+/**
+ * Creates the factorial of an integer
+ * @param  {integer} num number to be factorialized
+ * @return {integer}     returns factorial
+ * @author mmenschig
+ * @version 1.0
+ */
 function factorialize(num) {
 	
 	var array = [];
