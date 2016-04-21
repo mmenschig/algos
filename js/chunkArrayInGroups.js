@@ -1,5 +1,14 @@
 function chunkArrayInGroups(arr, size) {
-	return arr;
+
+  var chunks = [];
+  var i = 0;
+  var n = arr.length;
+
+  while (i < n) {
+    chunks.push(arr.slice(i, i+= size));
+  }
+
+  return chunks;
 }
 
-chunkArrayInGroups(["a", "b", "c", "d"], 2);
+chunkArrayInGroups([0, 1, 2, 3, 4, 5], 4);
