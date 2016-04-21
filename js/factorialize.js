@@ -32,4 +32,4 @@ function factorialize(num) {
   return result;
 }
 
-console.log(factorialize(10));
+console.log(factorialize(9));

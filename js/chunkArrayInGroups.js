@@ -8,7 +8,6 @@
  */
 function chunkArrayInGroups(arr, size) {
 
-
   var chunks = [];
   var i = 0;
   var n = arr.length;

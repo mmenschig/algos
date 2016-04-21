@@ -8,6 +8,7 @@
  */
 function truncateString(str, num) {
 
+  var result = "";
 
   if (num <= 3) {
      result = str.slice(0, num);
@@ -18,7 +19,7 @@ function truncateString(str, num) {
     } else {
      result = str.slice(0, num - 3);
      result += "...";
-  }
+    }
   }
 
   return result;
