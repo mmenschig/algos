@@ -1,8 +1,6 @@
 function mutation(arr) {
 
-
   var arrLower = [];
-
   for (var a = 0; a < arr.length; a++) {
     arrLower.push(arr[a].toLowerCase());
   }
