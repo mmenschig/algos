@@ -2,6 +2,8 @@
  * Returns length of longest word in string
  * @param  {string} str 	input string
  * @return {integer}    	length of longest word
+ * @author mmenschig
+ * @version 1.0
  */
 function findLongestWord(str) {
 
