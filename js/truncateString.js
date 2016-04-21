@@ -1,3 +1,11 @@
+/**
+ * [truncateString description]
+ * @param  {[type]} str [description]
+ * @param  {[type]} num [description]
+ * @return {[type]}     [description]
+ * @author mmenschig
+ * @version 1.0
+ */
 function truncateString(str, num) {
 
 
@@ -5,16 +13,16 @@ function truncateString(str, num) {
      result = str.slice(0, num);
      result += "...";
   } else {
-  	if (num >= str.length) {
-  		result = str
-  	} else {
+    if (num >= str.length) {
+      result = str
+    } else {
      result = str.slice(0, num - 3);
      result += "...";
- 	}
+  }
   }
 
   return result;
 
 }
 
-truncateString("Absolutely Longer", 2);
+console.log(truncateString("Absolutely Longer", 3));
