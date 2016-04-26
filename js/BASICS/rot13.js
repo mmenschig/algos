@@ -32,3 +32,26 @@ function rot13(str) {
 
 // Change the inputs below to test
 rot13("SERR PBQR PNZC");
+
+// Much more efficient version using only the
+// modulo operator
+function moduloRot13(str) {
+
+    var strList = [];
+    var strResult = "";
+    var i = 0;
+
+    for (i; i < str.length; i++) {
+        
+        if (str.charCodeAt(i) >= 65 && str.charCodeAt(i) <= 90) {
+            strResult += String.fromCharCode((str.charCodeAt(i) % 26) + 65);
+        } 
+        else {
+            strResult += str[i];
+        }
+    }
+
+    return strResult;
+}
+
+moduloRot13("SERR PBQR PNZC")
