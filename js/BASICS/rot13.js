@@ -6,10 +6,8 @@ function rot13(str) {
     var tempCharCode = 0;
   
     for (i; i < str.length; i++) {
-        // console.log(str[i], str.charCodeAt(i));
 
         if (str.charCodeAt(i) >= 65 && str.charCodeAt(i) <= 90) {
-            // console.log(str.charCodeAt(i));
 
             // For dealing with letters with 
             // characterCodes of 78 and higher
@@ -30,7 +28,6 @@ function rot13(str) {
 
 }
 
-// Change the inputs below to test
 rot13("SERR PBQR PNZC");
 
 // Much more efficient version using only the
