@@ -1,19 +1,15 @@
-function destroyer(arr) {
+function destroyer(arr, arr2, arr3, arr4) {
 
-    var newArray = Array.from(arguments);
-    var target = newArray[0];
-    var filter = newArray.slice(1, newArray.length);
+    var passedFilter = Array.prototype.slice.call(arguments, 1);
+
+    var newArray = arr.filter(function (x) {
+    if (passedFilter.indexOf(x) !== -1){
+        return false;
+    }
+        return true;
+    });
     
-    console.log(target);
-    console.log(filter);
-
-    
-    // var resultArray = target.filter()
-    
-
-
-
+    return newArray;
 }
 
-
-destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+destroyer([1, 2, 5, 3, 2, 1], 1, 2, 5);
