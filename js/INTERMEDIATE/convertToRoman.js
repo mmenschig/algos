@@ -46,7 +46,9 @@ function convertToRoman(num) {
         if (num / order[i] >= 1) {
             conversionArray.push(symbols[order[i]]);
             num -= order[i];
-            i -= 1; // restarting loop
+            // if a denominator is found, we restart
+            // to check if we can divide again
+            i = -1;
         }
     }
 
