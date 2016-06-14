@@ -15,8 +15,16 @@ var symbols = {
     1000: 'M'
 };
 
-var order = [1000, 500, 100, 50, 10,
-             9, 8, 7, 6, 5, 4, 3, 2, 1];
+// We create an array that holds the property names of
+// symbols from largest to smallest
+var order = Object.getOwnPropertyNames(symbols).sort(largestToSmallest);
+
+
+// We use this function to sort the PropertyNames of our
+// symbols object.
+function largestToSmallest(a, b) {
+	return (b - a);
+}
 
 
 function convertToRoman(num) {
@@ -37,8 +45,7 @@ function convertToRoman(num) {
     }
 
     // return conversionArray
-
     return conversionArray.join("");
 };
 
-console.log(convertToRoman(3999));
+console.log(convertToRoman(2016));
