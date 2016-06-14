@@ -43,12 +43,16 @@ function convertToRoman(num) {
 
     for (var i = 0; i < order.length; i++) {
 
+        if (num === 0) {
+            break;
+        }
+
         if (num / order[i] >= 1) {
             conversionArray.push(symbols[order[i]]);
             num -= order[i];
             // if a denominator is found, we restart
             // to check if we can divide again
-            i = -1;
+            i -= 1; // far more efficient than setting i to -1
         }
     }
 
