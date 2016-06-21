@@ -2,6 +2,9 @@
 function translatePigLatin(str) {
   
   // Reg Ex for consonant or consonant clusters
+  // NOTE:  This pattern will match any consonant
+  //        (1 or more ({1,0}) found at the 
+  //        beginning of of the string. (^)
   var re = /^([bcdfghjklmnpqrstvwxyz]{1,})/;
 
   // executing regular expression,
