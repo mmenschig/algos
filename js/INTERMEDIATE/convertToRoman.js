@@ -26,7 +26,7 @@ var order = Object.getOwnPropertyNames(symbols).sort(largestToSmallest);
 // We use this function to sort the PropertyNames of our
 // symbols object.
 function largestToSmallest(a, b) {
-	return (b - a);
+    return (b - a);
 }
 
 // We convert the arabic number to our
@@ -52,7 +52,7 @@ function convertToRoman(num) {
             num -= order[i];
             // if a denominator is found, we restart
             // to check if we can divide again
-            i -= 1; // far more efficient than setting i to -1
+            i -= 1;
         }
     }
 
