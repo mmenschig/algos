@@ -11,21 +11,13 @@ function pairElement(str) {
 
   var result = [];
 
-
-  for (var i = 0; i < str.length; i++) {
-    result.push(pairs[str[i]].split(''));
-  }
-
-  for (char in str) {
-    result.push(pairs[str[char]].split(''))
-    console.log(pairs[str[char]].split(''));
+  for (var char in str) {
+    // We split the matching pair and
+    // add the returned array into result
+    result.push(pairs[str[char]].split(''));
   }
 
   return result;
-
-
-
-
 }
 
 
