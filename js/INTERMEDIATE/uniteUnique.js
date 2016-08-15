@@ -1,20 +1,22 @@
 
 function uniteUnique(arr) {
 
-
-    console.log(arguments.length)
-
     var combined = [];
     
     for (var i = 0; i < arguments.length; i++) {
-        console.log(arguments[i]);
+        argArray = arguments[i];
+
+        for (var j = 0; j < argArray.length; j++) {
+
+            if (combined.indexOf(argArray[j]) === -1) {
+                combined.push(argArray[j]);
+            }
+        }
     }
 
-    // use reduce - gotta understand this one first
-    // and arguments.length
 
-
-
+    return combined;
 }
+
 
 uniteUnique([1, 3, 2], [1, [5]], [2, [4]]);
