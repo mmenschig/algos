@@ -1,8 +1,10 @@
 
 function spinalCase(str) {
+
+    // matches whitespace or underscare
     var regex = /\s+|_+/g;
     
-    str = str.replace(/([a-z])([A-Z])/g, '$1 $2')
+    str = str.replace(/([a-z])([A-Z])/g, '$1 $2') 
     return str.replace(regex, '-').toLowerCase();
 }
 
