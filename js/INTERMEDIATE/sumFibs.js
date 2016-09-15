@@ -29,4 +29,4 @@ function sumFibs(num) {
     return sum
 }
 
-sumFibs(4);
+sumFibs(10);
