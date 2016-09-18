@@ -1,20 +1,25 @@
 /*  Flattens a nested array,
     regardless of levels of nesting.
 */
-var result = [];
+
 
 function steamrollArray(arr) {
-    
-    for (var i = 0; i < arr.length; i++) {
+    var result = [];  
 
-        if (Array.isArray(arr[i])) {
-            steamrollArray(arr[i]);
+    var flatten = function(arg) {
+        if (!Array.isArray(arg)) {
+            result.push(arg);
         } else {
-            result.push(arr[i]);
+            for (var a in arg) {
+                flatten(arg[a]);
+            }
         }
-    }
+    };
 
+    // Call the flatten function for each
+    // element in the array
+    arr.forEach(flatten);
     return result;
 }
 
-steamrollArray([[["a"]], [["b"]]]);
+steamrollArray([1, [2], [3, [[4]]]]);
