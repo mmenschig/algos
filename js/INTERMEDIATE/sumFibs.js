@@ -26,6 +26,8 @@ function sumFibs(num) {
     // We sum up all entries
     var sum = filtered.reduce(function(a, b) { return a + b; }, 0);
 
+    // We return sum of 
+    // primes.
     return sum
 }
 
