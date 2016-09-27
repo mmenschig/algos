@@ -1,11 +1,6 @@
 /*  Flattens a nested array,
     regardless of levels of nesting.
 */
-
-// We store the flattened array
-// in here
-var result = [];
-
 function steamrollArray(arr) {
     var result = [];  
 
