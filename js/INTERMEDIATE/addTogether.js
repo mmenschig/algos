@@ -12,16 +12,13 @@ function addTogether() {
   if (arguments.length === 2) {
     return arguments[0] + arguments[1];
   } else {
-
     var x = arguments[0];
     return function(y) {
-
       if (typeof arguments[0] !== 'number') {
         return undefined;
       }
-
       return x + y;
-    };
+    }
   }
 
 }
