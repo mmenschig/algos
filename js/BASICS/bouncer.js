@@ -1,8 +1,8 @@
 function bouncer(arr) {
 
-    return arr.filter(function(v) {
-        return !!v;
-    });
+  return arr.filter(function(v) {
+      return !!v;
+  });
 
     // Alternatively we could use the Boolean constructor
     // and avoid using a callback
@@ -10,4 +10,4 @@ function bouncer(arr) {
 
 }
 
-console.log(bouncer([7, "ate", "", false, 9]));
+bouncer([7, "ate", "", false, 9]);
