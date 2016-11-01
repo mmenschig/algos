@@ -1,16 +1,9 @@
 function checkCashRegister(price, cash, cid) {
+
+    var currencies = [0.01, 0.05, 0.10, 0.25, 1.00, 5.00, 10.00, 20.00, 100.00]
     
-    var money = {
-        'PENNY': 0.01,
-        'NICKEL': 0.05,
-        'DIME': 0.10,
-        'QUARTER': 0.25,
-        'ONE': 1.00,
-        'FIVE': 5.00,
-        'TEN': 10.00,
-        'TWENTY': 20.00,
-        'ONE HUNDRED': 100.00
-    }
+    var change = (cash - price).toFixed(2)
+    console.log(change);
 
     var funds = 0;
     for (var item in cid) {
@@ -19,6 +12,12 @@ function checkCashRegister(price, cash, cid) {
         funds += parseFloat(cid[item].toString().split(',')[1]);
     }
     console.log('Total cash in drawer:', funds);
+
+    if (funds < change) {
+        return 'INSUFFICIENT FUNDS';
+    } else {
+        // code here
+    }
 
 }
 
